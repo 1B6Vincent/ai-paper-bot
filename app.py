@@ -19,6 +19,7 @@ def on_input_change():
 
     st.session_state.past.append(prompt)
     st.session_state.generated.append({'type': 'normal', 'data': prompt_response})
+    st.session_state.user_input = ""
 
 def on_btn_click():
     del st.session_state.past[:]
